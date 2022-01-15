@@ -7,7 +7,7 @@ locals {
   cluster_name = "${var.cluster_name}-${var.env_name}"
 }
 
-## AWS VPC definition
+# AWS VPC definition
 resource "aws_vpc" "main" {
   cidr_block = var.main_vpc_cidr
   tags = {
